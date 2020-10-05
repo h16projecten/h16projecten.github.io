@@ -46,9 +46,15 @@
                                 <span></span>
                             </div>
                             <ul class="menu">
-                                <a href="#team"><li>Team</li></a>
-                                <a href="#portfolio"><li>Portfolio</li></a>
-                                <a href="#contact"><li>Contact</li></a>
+                                <a onclick="javascript:toggleHamburger()" href="#team"
+                                    ><li>Team</li></a
+                                >
+                                <a onclick="javascript:toggleHamburger()" href="#portfolio"
+                                    ><li>Portfolio</li></a
+                                >
+                                <a onclick="javascript:toggleHamburger()" href="#contact"
+                                    ><li>Contact</li></a
+                                >
                                 <p class="menumedia">
                                     <box-icon
                                         onclick="location.href='https://www.facebook.com/H16.be';"
@@ -65,6 +71,10 @@
                                         animation="tada-hover"
                                     ></box-icon>
                                 </p>
+                                <img
+                                    src="./images/undraw_Social_media_re_w12q.svg"
+                                    class="menusvg"
+                                />
                             </ul>
                         </nav>
                     </header>
@@ -120,7 +130,7 @@
                                 preserveAspectRatio="none"
                             >
                                 <defs>
-                                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                                    <linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%">
                                         <stop
                                             offset="0%"
                                             style="stop-color: #0e468c; stop-opacity: 1"
@@ -147,27 +157,41 @@
             <div class="section">
                 <div class="team-section">
                     <div class="team">
-                        <div class="triangle3">
-                            <!-- triangle3 -->
-                        </div>
-                        <div class="trapezoid"></div>
+                        <svg
+                            class="curve_blauw_noanim curve2"
+                            width="400"
+                            height="100vh"
+                            viewbox="0 0 100 100"
+                            preserveAspectRatio="none"
+                        >
+                            <path d="M 0 100 L 100 100 C 85 44 28 59 8 0 L 0 0 z" fill="#254b7a" />
+                        </svg>
                         <h2>Team</h2>
                         <hr />
                         <div class="teamdesc">
                             <div class="Elena"><p>Elena Versyp</p></div>
                             <div class="Karel"><p>Karel Versyp</p></div>
                         </div>
+                        <img src="./images/undraw_team_work_k80m.svg" class="teamsvg" />
                     </div>
                 </div>
             </div>
 
             <div class="section">
                 <div class="contact-section">
+                    <img src="./images/undraw_contact_us_15o2.svg" class="contactsvg" />
                     <div id="map1"></div>
                     <div class="contact">
-                        <div class="triangle4">
-                            <!-- triangle4 -->
-                        </div>
+                        <svg
+                            class="curve_blauw_noanim curve3"
+                            width="100vw"
+                            height="100vh"
+                            viewbox="0 0 100 100"
+                            preserveAspectRatio="none"
+                        >
+                            <path d="M 100 0 L 100 37 C 82 17 66 23 61 0" fill="#0e468c" />
+                        </svg>
+
                         <h2>Contact</h2>
                         <hr />
                         <div class="contactdesc">
@@ -255,9 +279,6 @@
                         <p>© 2020 H16 - All right reserved</p>
                     </span>
                 </footer>
-                <div class="triangle2">
-                    <!-- triangle2 -->
-                </div>
             </div>
         </div>
 

@@ -33,8 +33,7 @@
     src: URL('./fonts/OpenSans-SemiBoldItalic.ttf') format('truetype');
 }
 
-html,
-body {
+html, body {
     margin: 0;
     min-height: 100%;
     -webkit-text-stroke: 0px !important;
@@ -43,6 +42,12 @@ body {
 
 .fp-section {
     z-index: -5;
+}
+
+.fp-tableCell {
+    height: 100vh;
+    position: absolute;
+    top: 0;
 }
 
 .bgvideo video {
@@ -73,16 +78,11 @@ body {
     height: 4px;
     margin-bottom: 5px;
     position: relative;
-
     background: #cdcdcd;
     border-radius: 3px;
-
     z-index: 1;
-
     transform-origin: 4px 0px;
-
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
 }
 
 .hamburger span:first-child {
@@ -122,6 +122,13 @@ body {
 
 .menu a:hover {
     color: #d83415;
+}
+
+.menusvg {
+    width: auto;
+    height: 200px !important;
+    position: absolute;
+    bottom: 20%;
 }
 
 .showNav {
@@ -186,6 +193,13 @@ body {
     animation: tilt-in-fwd-tr 0.6s cubic-bezier(0, 0.92, 0, 1) both;
 }
 
+.curve_blauw_noanim {
+    display: block;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+}
+
 .content {
     order: 1;
     margin: 10% 0 0 45%;
@@ -228,49 +242,6 @@ box-icon:hover {
     flex-shrink: 0;
 }
 
-.triangle1 {
-    position: absolute;
-    top: 0;
-    width: 0;
-    height: 0;
-    border-bottom: 100vh solid white;
-    border-right: 450px solid transparent;
-    z-index: -1;
-}
-
-.triangle2 {
-    position: absolute;
-    bottom: 0;
-    height: 0;
-    width: 0;
-    margin-bottom: -2rem;
-    border-bottom: 35vh solid #eff1f5;
-    /* kan gewijzigd worden */
-    border-right: 40vh solid transparent;
-    z-index: 0;
-}
-
-.triangle3 {
-    position: absolute;
-    top: 5%;
-    height: 0;
-    width: 0;
-    margin-bottom: -2rem;
-    border-bottom: 30vh solid #dce5f0;
-    /* kan gewijzigd worden */
-    border-right: 13vw solid transparent;
-    z-index: -3;
-}
-
-.triangle4 {
-    position: absolute;
-    right: 0;
-    width: 0;
-    height: 0;
-    border-top: 45vh solid #0f468b;
-    border-left: 25vw solid transparent;
-}
-
 .team-section {
     min-height: 100vh;
     z-index: 2;
@@ -301,8 +272,15 @@ box-icon:hover {
     justify-content: center;
 }
 
-.Elena,
-.Karel {
+.teamsvg {
+    position: absolute;
+    bottom: 10%;
+    right: 3%;
+    height: 300px !important;
+    width: auto;
+}
+
+.Elena, .Karel {
     border-radius: 0.2rem;
     margin: 0 2em;
     height: 60vh;
@@ -310,8 +288,7 @@ box-icon:hover {
     background-color: #ededf1;
 }
 
-.Elena p,
-.Karel p {
+.Elena p, .Karel p {
     text-align: center;
 }
 
@@ -329,7 +306,7 @@ box-icon:hover {
 .contact-section {
     display: flex;
     flex-direction: column;
-    min-height: 73%;
+    min-height: 74vh;
     position: relative;
 }
 
@@ -348,6 +325,15 @@ box-icon:hover {
     font-size: 25px;
     opacity: 0.9;
     font-weight: 100;
+}
+
+.contactsvg {
+    position: absolute;
+    top: 200px;
+    right: 8%;
+    height: 300px !important;
+    width: auto;
+    z-index: -1;
 }
 
 .bfrarrow {
@@ -410,11 +396,12 @@ hr {
     padding: 30px;
     padding-bottom: 10px;
     max-width: 100%;
-    background-color: #ffff;
+    background-color: transparent;
     border-radius: 0.1rem;
 }
 
 .fcf-form-group {
+    z-index: 10;
     margin-bottom: 1rem;
 }
 
@@ -450,8 +437,7 @@ hr {
     border: 1px solid #313131;
 }
 
-select.fcf-form-control[size],
-select.fcf-form-control[multiple] {
+select.fcf-form-control[size], select.fcf-form-control[multiple] {
     height: auto;
 }
 
@@ -474,14 +460,13 @@ textarea.fcf-form-control {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background-color: transparent;
+    background-color: #ffff;
     border: 1px solid transparent;
     padding: 0.375rem 0.75rem;
     font-size: 20px;
     line-height: 1.5;
-    border-radius: 0.05rem;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-        border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    border-radius: 0.15rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .fcf-btn:hover {
@@ -513,8 +498,7 @@ footer {
     display: inline-block;
 }
 
-#fp-nav ul li a span,
-.fp-slidesNav ul li a span {
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
     background: rgb(146, 145, 145) !important;
 }
 
@@ -527,26 +511,21 @@ footer {
         height: 70vh;
         flex-direction: column;
     }
-
     .header-logo {
         margin: 50vh 0 1rem -5%;
         order: 2;
     }
-
     nav {
         order: 1;
         align-self: flex-end;
     }
-
     .header img {
         height: 80px;
     }
-
     .menu {
         height: 100vh;
-        width: 75vw;
+        width: 220vw;
     }
-
     .right-side {
         order: 1;
         align-self: flex-start;
@@ -574,21 +553,6 @@ footer {
         top: 0;
         z-index: -2;
     }
-    .triangle1 {
-        position: relative;
-        order: 2;
-        border-bottom: 100vh solid white;
-        border-right: 30vh solid transparent;
-    }
-    .triangle2 {
-        border-bottom: 20vh solid transparent;
-        /* kan gewijzigd worden */
-        border-right: 18vh solid transparent;
-    }
-    .triangle4 {
-        border-top: 27vh solid #0e3d77;
-        border-left: 17vh solid transparent;
-    }
     .left-side {
         order: 2;
         min-height: 10vh;
@@ -606,25 +570,51 @@ footer {
         font-size: 20px;
         flex-direction: column;
     }
-    .Elena,
-    .Karel {
+    .Elena, .Karel {
         margin: 2em 2em;
         height: 50vh;
         width: 60vw;
     }
-    .trapezoid {
-        border-bottom: 160vh solid #0e468c;
-        width: 10%;
+    .teamsvg {
+        position: relative;
+        height: 200px !important;
+        width: auto;
+        z-index: 1;
+        margin-left: 5em;
+        margin-bottom: 2em;
+    }
+    .curve2 {
+        width: 62%;
+    }
+    .curve_blauw_noanim {
+        z-index: -2;
+        height: 190vh;
     }
     .contact h2 {
+        margin-top: 4rem;
         font-size: 35px;
         line-height: 1.8;
+    }
+    .contactdesc {
+        margin-right: 0;
+        z-index: 10;
+    }
+    .contactdesc a {
+        mix-blend-mode: difference;
+    }
+    .contactsvg {
+        position: absolute;
+        top: 80%;
+        left: 10%;
+        height: 150px !important;
+        width: auto;
+        z-index: -1;
     }
     .fcf-body {
         margin: 4% 10% 2rem 5%;
     }
     footer {
-        margin: 9rem 2rem 2rem 2rem;
+        margin: 8rem 2rem 2rem 2rem;
     }
     .footer-desc p {
         font-size: 12px;
