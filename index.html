@@ -4,7 +4,13 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <meta name="description" content="" />
+        <meta
+            name="description"
+            content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+        officiis eum quisquam eveniet facere iste! Minus earum inventore
+        quidem similique sit maiores consectetur illum molestias
+        aspernatur?"
+        />
         <!-- omschrijving -->
         <title>H16</title>
         <link rel="stylesheet" href="style.css" />
@@ -27,6 +33,28 @@
     </head>
 
     <body>
+        <script>
+            window.fbAsyncInit = function () {
+                FB.init({
+                    appId: '799273420644318',
+                    xfbml: true,
+                    version: 'v8.0',
+                });
+                FB.AppEvents.logPageView();
+            };
+
+            (function (d, s, id) {
+                var js,
+                    fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) {
+                    return;
+                }
+                js = d.createElement(s);
+                js.id = id;
+                js.src = 'https://connect.facebook.net/en_US/sdk.js';
+                fjs.parentNode.insertBefore(js, fjs);
+            })(document, 'script', 'facebook-jssdk');
+        </script>
         <div id="fullPage">
             <div class="section">
                 <div class="bgvideo">
@@ -152,6 +180,11 @@
                             </svg>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="gallery">
+                    <div id="instafeed"></div>
                 </div>
             </div>
             <div class="section">
@@ -294,24 +327,6 @@
             crossorigin="anonymous"
         ></script>
 
-        <script
-            defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7oNYFM0toquPvb3DFyNnq0Q4K6ZNjbHA&callback=initMap"
-        ></script>
-        <script>
-            // Initialize and add the map
-            function initMap() {
-                // The location of Uluru
-                var uluru = { lat: -25.344, lng: 131.036 };
-                // The map, centered at Uluru
-                var map = new google.maps.Map(document.getElementById('map'), {
-                    zoom: 4,
-                    center: uluru,
-                });
-                // The marker, positioned at Uluru
-                var marker = new google.maps.Marker({ position: uluru, map: map });
-            }
-        </script>
         <script>
             function ShowHide(divId) {
                 if (document.getElementById(divId).style.display == 'none') {
@@ -338,13 +353,15 @@
                 });
             })(document);
         </script>
+
         <script>
             new fullpage('#fullPage', {
                 autoScrolling: true,
                 navigation: true,
                 scrollOverflow: true,
+                scrollingSpeed: 1000,
                 sectionsColor: ['transparent', '#ededf1', 'white'],
-                anchors: ['home', 'team', 'contact'],
+                anchors: ['home', 'portfolio', 'team', 'contact'],
             });
         </script>
 
@@ -357,6 +374,14 @@
                 menu.classList.toggle('showNav');
                 ham.classList.toggle('showClose');
             }
+        </script>
+
+        <script type="text/javascript" src="path/to/instafeed.min.js"></script>
+        <script type="text/javascript">
+            var feed = new Instafeed({
+                accessToken: 'your-token',
+            });
+            feed.run();
         </script>
     </body>
 </html>
