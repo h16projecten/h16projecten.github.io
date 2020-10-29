@@ -242,6 +242,13 @@ html, body {
     flex-shrink: 0;
 }
 
+.scrollicon{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 50px;
+    margin-left: 150px;
+}
+
 .gallery p{
     margin: 40vh 20% auto 20%;
     text-align: center;
