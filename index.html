@@ -6,10 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <meta
             name="description"
-            content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-        officiis eum quisquam eveniet facere iste! Minus earum inventore
-        quidem similique sit maiores consectetur illum molestias
-        aspernatur?"
+            content="Onder constructie!"
         />
         <!-- omschrijving -->
         <title>H16</title>
@@ -74,11 +71,11 @@
                                 <span></span>
                             </div>
                             <ul class="menu">
-                                <a onclick="javascript:toggleHamburger()" href="#team"
-                                    ><li>Team</li></a
-                                >
                                 <a onclick="javascript:toggleHamburger()" href="#portfolio"
                                     ><li>Portfolio</li></a
+                                >
+                                <a onclick="javascript:toggleHamburger()" href="#team"
+                                    ><li>Team</li></a
                                 >
                                 <a onclick="javascript:toggleHamburger()" href="#contact"
                                     ><li>Contact</li></a
@@ -111,30 +108,10 @@
                         <div class="left-side">
                             <div class="content">
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-                                    officiis eum quisquam eveniet facere iste! Minus earum inventore
-                                    quidem similique sit maiores consectetur illum molestias
-                                    aspernatur? Eligendi unde ut repudiandae!
+                                    Under construction
                                 </p>
                             </div>
-                            <div class="media">
-                                <p>
-                                    <box-icon
-                                        onclick="location.href='https://www.facebook.com/H16.be';"
-                                        name="facebook"
-                                        type="logo"
-                                        size="md"
-                                        animation="tada-hover"
-                                    ></box-icon>
-                                    <box-icon
-                                        onclick="location.href='https://www.instagram.com/h16.be';"
-                                        name="instagram"
-                                        type="logo"
-                                        size="md"
-                                        animation="tada-hover"
-                                    ></box-icon>
-                                </p>
-                            </div>
+                            
                         </div>
 
                         <div class="right-side">
@@ -185,6 +162,25 @@
             <div class="section">
                 <div class="gallery">
                     <div id="instafeed"></div>
+                    <p>Volg onze Facebook en Instagram pagina om op de hoogte te blijven van onze portefeuille</p>
+                    <div class="media">                  
+                    <p>
+                        <box-icon class="fb"
+                            onclick="location.href='https://www.facebook.com/H16.be';"
+                            name="facebook"
+                            type="logo"
+                            size="md"
+                            animation="tada-hover"
+                        ></box-icon>
+                        <box-icon class="inst"
+                            onclick="location.href='https://www.instagram.com/h16.be';"
+                            name="instagram"
+                            type="logo"
+                            size="md"
+                            animation="tada-hover"
+                        ></box-icon>
+                    </p>
+                </div>
                 </div>
             </div>
             <div class="section">
@@ -202,8 +198,12 @@
                         <h2>Team</h2>
                         <hr />
                         <div class="teamdesc">
-                            <div class="Elena"><p>Elena Versyp</p></div>
-                            <div class="Karel"><p>Karel Versyp</p></div>
+                            <div class="Elena"><p>Elena Versyp</p>
+                                <p><span><a href = "mailto: elena@h16.be"><box-icon class="mailicon" name='envelope'></box-icon>elena@h16.be</a></span>
+                                    <span><box-icon class="phoneicon" name='phone'></box-icon>+32 474 04 22 79</span></p></div>
+                            <div class="Karel"><p>Karel Versyp</p>
+                                <p><span><a href = "mailto: karel@h16.be"><box-icon class="mailicon" name='envelope'></box-icon>karel@h16.be</a></span>
+                                    <span><box-icon class="phoneicon" name='phone'></box-icon>+32 484 96 90 00</span></p></div>
                         </div>
                         <img src="./images/undraw_team_work_k80m.svg" class="teamsvg" />
                     </div>
@@ -359,7 +359,7 @@
                 autoScrolling: true,
                 navigation: true,
                 scrollOverflow: true,
-                scrollingSpeed: 1000,
+                scrollingSpeed: 500,
                 sectionsColor: ['transparent', '#ededf1', 'white'],
                 anchors: ['home', 'portfolio', 'team', 'contact'],
             });

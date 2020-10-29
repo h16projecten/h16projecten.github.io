@@ -169,6 +169,7 @@ html, body {
 }
 
 .left-side {
+    width: 100%;
     align-self: flex-start;
     flex-grow: 1;
     min-height: 100vh;
@@ -204,7 +205,7 @@ html, body {
     order: 1;
     margin: 10% 0 0 45%;
     font-family: OpenSans;
-    font-size: 21px;
+    font-size: 40px;
     opacity: 1;
     font-weight: 100;
     line-height: 32px;
@@ -221,16 +222,15 @@ html, body {
 
 .media {
     order: 2;
-    margin: 0 0 0 45%;
     font-size: 35px;
     opacity: 0.71;
 }
 
-box-icon {
+.fb, .inst {
     cursor: pointer;
 }
 
-box-icon:hover {
+.fb:hover, .inst:hover {
     opacity: 1;
     fill: #d83415;
 }
@@ -240,6 +240,16 @@ box-icon:hover {
     flex-grow: 1;
     flex-basis: 55%;
     flex-shrink: 0;
+}
+
+.gallery p{
+    margin: 40vh 20% auto 20%;
+    text-align: center;
+    font-family: OpenSans;
+    font-size: 40px;
+    opacity: 0.9;
+    font-weight: 100;
+    line-height: 45px;
 }
 
 .team-section {
@@ -283,13 +293,37 @@ box-icon:hover {
 .Elena, .Karel {
     border-radius: 0.2rem;
     margin: 0 2em;
-    height: 60vh;
+    height: 50vh;
     width: 20vw;
     background-color: #ededf1;
 }
 
 .Elena p, .Karel p {
     text-align: center;
+    padding-top: 1em;
+}
+
+.Elena p:first-child, .Karel p:first-child {
+    font-size: 30px;
+    font-weight: 200;
+}
+
+p span {
+    display: block;
+    text-align: left;
+    line-height: 50px;
+    margin-left: 40px;
+  }
+
+p span:first-child {
+    margin-top: 10px;
+  }
+
+.mailicon, .phoneicon{
+    text-align: center; 
+    position: relative;
+    top: 5px;
+    right: 10px;
 }
 
 .trapezoid {
@@ -329,11 +363,12 @@ box-icon:hover {
 
 .contactsvg {
     position: absolute;
-    top: 200px;
+    top: 300px;
     right: 8%;
     height: 300px !important;
     width: auto;
     z-index: -1;
+    opacity: 1;
 }
 
 .bfrarrow {
@@ -375,7 +410,7 @@ hr {
 
 .contact h2 {
     font-family: My-Balerno;
-    margin: 7rem 10rem 2rem 10%;
+    margin: 5rem 10rem 2rem 10%;
     font-size: 50px;
     font-weight: 100;
     line-height: 1.8;
@@ -477,7 +512,7 @@ textarea.fcf-form-control {
 
 footer {
     position: relative;
-    margin: 9rem 2rem 2rem 2rem;
+    margin: 9rem 2rem 0 2rem;
     opacity: 1;
     display: flex;
     justify-content: center;
@@ -561,9 +596,9 @@ footer {
         order: 1;
         margin: 10% 10% 0 10%;
     }
-    .media {
-        order: 2;
-        margin: 5% 0 20% 10%;
+    .gallery p{
+        margin: 20vh 15% 10% 15%;
+        font-size: 35px;
     }
     .teamdesc {
         margin: 4% 1rem 2rem 12%;
@@ -575,6 +610,11 @@ footer {
         height: 50vh;
         width: 60vw;
     }
+
+    p span {
+        margin-left: 20px;
+    }
+
     .teamsvg {
         position: relative;
         height: 200px !important;
@@ -593,7 +633,7 @@ footer {
         height: 90vh;
     }
     .contact h2 {
-        margin-top: 4rem;
+        margin-top: 3rem;
         font-size: 35px;
         line-height: 1.8;
     }
@@ -617,7 +657,7 @@ footer {
         margin: 4% 10% 2rem 5%;
     }
     footer {
-        margin: 8rem 2rem 3rem 2rem;
+        margin: 7rem 2rem 0 2rem;
     }
     .footer-desc p {
         font-size: 12px;
