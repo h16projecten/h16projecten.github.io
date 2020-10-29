@@ -573,6 +573,12 @@ footer {
         align-self: flex-start;
         display: flex;
     }
+
+    .scrollicon{
+        right: 0;
+        margin-right: 40px;
+    }
+
     .widthadept {
         z-index: 0;
         background-color: white;
@@ -613,9 +619,9 @@ footer {
         flex-direction: column;
     }
     .Elena, .Karel {
-        margin: 2em 2em;
+        margin: 2em 1em;
         height: 50vh;
-        width: 60vw;
+        width: 65vw;
     }
 
     p span {
@@ -627,7 +633,7 @@ footer {
         height: 200px !important;
         width: auto;
         z-index: 1;
-        margin-left: 5em;
+        margin-left: 4em;
         margin-bottom: 2em;
     }
     .curve2 {
