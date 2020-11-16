@@ -209,6 +209,7 @@ html, body {
 .curve5{
     position: absolute;
     left: 0;
+    color: gray;
 }
 
 .content {
@@ -314,7 +315,7 @@ html, body {
     width: 20vw;
     background-color: #ededf1;
     z-index: 10;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08), 0 6px 15px 0 rgba(0, 0, 0, 0.06);   
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.03), 0 6px 15px 0 rgba(53, 37, 37, 0.02);   
 }
 
 .Elena p, .Karel p {
