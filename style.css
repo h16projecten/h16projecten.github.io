@@ -198,7 +198,17 @@ html, body {
     display: block;
     position: absolute;
     top: 0;
-    z-index: 0;
+    z-index: -10000;
+}
+
+.curve4{
+    position: absolute;
+    right: 0;
+}
+
+.curve5{
+    position: absolute;
+    left: 0;
 }
 
 .content {
@@ -270,7 +280,7 @@ html, body {
 
 .team h2 {
     font-family: My-Balerno;
-    padding: 1em 10rem 0.7rem 15%;
+    padding: 1em 10rem 0 10%;
     margin-block-start: 0;
     margin-block-end: 0;
     font-size: 65px;
@@ -291,8 +301,8 @@ html, body {
 
 .teamsvg {
     position: absolute;
-    bottom: 10%;
-    right: 3%;
+    bottom: 5%;
+    right: 2%;
     height: 300px !important;
     width: auto;
 }
@@ -303,6 +313,8 @@ html, body {
     height: 50vh;
     width: 20vw;
     background-color: #ededf1;
+    z-index: 10;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08), 0 6px 15px 0 rgba(0, 0, 0, 0.06);   
 }
 
 .Elena p, .Karel p {
@@ -370,7 +382,7 @@ p span:first-child {
 
 .contactsvg {
     position: absolute;
-    top: 300px;
+    top: 37%;
     right: 8%;
     height: 300px !important;
     width: auto;
@@ -404,7 +416,7 @@ p span:first-child {
 }
 
 hr {
-    margin: 1rem 73% 2rem 10%;
+    margin: 1rem 76% 2rem 10%;
     color: #1c3c64;
     background-color: #1c3c64;
     height: 0.1px;
@@ -417,7 +429,7 @@ hr {
 
 .contact h2 {
     font-family: My-Balerno;
-    margin: 5rem 10rem 2rem 10%;
+    margin: 5rem 10rem 0 10%;
     font-size: 50px;
     font-weight: 100;
     line-height: 1.8;
@@ -528,14 +540,15 @@ footer {
 
 .footer-desc p {
     font-family: My-Balerno;
-    font-size: 19px;
+    font-size: 17px;
     opacity: 0.8;
-    font-weight: 900;
+    font-weight: 100;
     display: inline-block;
+    line-height: 20px;
 }
 
 .footer-logo {
-    margin: 0 4% 0 0;
+    margin: 0 2% 0 2%;
     height: 45px;
     display: inline-block;
 }
@@ -636,15 +649,27 @@ footer {
         margin-left: 4em;
         margin-bottom: 2em;
     }
-    .curve2 {
+    .curve2{
         z-index: -2;
-        width: 62%;
         height: 100%;
+        position: absolute;
+        left: -5%;
+        width: 55%;
     }
-    .curve3 {
+
+    .curve5{
         z-index: -2;
-        height: 90vh;
+        height: 100%;
+        position: absolute;
+        left: -7%;
+        width: 52%;
     }
+
+    .curve3, .curve4 {
+        z-index: -2;
+        height: 30vh;
+    }
+
     .contact h2 {
         margin-top: 3rem;
         font-size: 35px;
@@ -673,12 +698,36 @@ footer {
         margin: 7rem 2rem 0 2rem;
     }
     .footer-desc p {
-        font-size: 12px;
+        font-size: 10px;
         opacity: 0.8;
+        line-height: 15px;
     }
     .footer-logo {
         margin: 0 4% 0 0;
         height: 30px;
+    }
+}
+
+@media screen and (max-width: 1100px) and (min-width: 767px) {
+    .menu {
+        width: 70vw;      
+    }
+    
+    .Elena, .Karel {
+        border-radius: 0.2rem;
+        margin: 5rem 2em;
+        height: 40vh;
+        width: 35vw;
+        background-color: #ededf1;
+        z-index: 10;
+    }
+
+    .teamsvg {
+        position: absolute;
+        bottom: 2%;
+        right: 2%;
+        height: 350px !important;
+        width: auto;
     }
 }
 

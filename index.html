@@ -20,16 +20,10 @@
             integrity="sha512-8M8By+q+SldLyFJbybaHoAPD6g07xyOcscIOQEypDzBS+sTde5d6mlK2ANIZPnSyxZUqJfCNuaIvjBUi8/RS0w=="
             crossorigin="anonymous"
         />
-        <link
-            rel="stylesheet"
-            id="googleFonts-css"
-            href="https://fonts.googleapis.com/css?family=Libre+Baskerville%3A400%2C700"
-            type="text/css"
-            media="all"
-        />
     </head>
 
     <body>
+        <!--
         <script>
             window.fbAsyncInit = function () {
                 FB.init({
@@ -52,6 +46,7 @@
                 fjs.parentNode.insertBefore(js, fjs);
             })(document, 'script', 'facebook-jssdk');
         </script>
+        -->
         <div id="fullPage">
             <div class="section">
                 <div class="bgvideo">
@@ -191,12 +186,21 @@
                     <div class="team">
                         <svg
                             class="curve_blauw_noanim curve2"
-                            width="400"
+                            width="50vw"
                             height="100vh"
                             viewbox="0 0 100 100"
                             preserveAspectRatio="none"
                         >
                             <path d="M 0 100 L 100 100 C 85 44 28 59 8 0 L 0 0 z" fill="#254b7a" />
+                        </svg>
+                        <svg
+                            class="curve_blauw_noanim curve5"
+                            width="45vw"
+                            height="100vh"
+                            viewbox="0 0 100 100"
+                            preserveAspectRatio="none"
+                        >
+                            <path d="M 0 100 L 100 100 C 85 44 28 59 8 0 L 0 0 z" fill="white" />
                         </svg>
                         <h2>Team</h2>
                         <hr />
@@ -225,7 +229,16 @@
                             viewbox="0 0 100 100"
                             preserveAspectRatio="none"
                         >
-                            <path d="M 100 0 L 100 37 C 82 17 66 23 61 0" fill="#0e468c" />
+                            <path d="M 100 0 L 100 100 L 100 100 C 84 42 55 66 45 0 Z" fill="#254b7a" />
+                        </svg>
+                        <svg
+                            class="curve_blauw_noanim curve4"
+                            width="100vw"
+                            height="100vh"
+                            viewbox="0 0 100 100"
+                            preserveAspectRatio="none"
+                        >
+                            <path d="M 100 0 L 100 100 L 100 90 C 84 42 55 66 50 0 Z" fill="white" />
                         </svg>
 
                         <h2>Contact</h2>
@@ -310,9 +323,11 @@
                 </div>
 
                 <footer class="footer">
+                    
                     <img class="footer-logo" src="images/H16_LOGO_BLAUW.svg" alt="H16" />
                     <span class="footer-desc">
-                        <p>© 2020 H16 - All right reserved</p>
+                        <p>H16 © 2020 - All right reserved <br>
+                            Design by Clément Peleman</p>
                     </span>
                 </footer>
             </div>
@@ -378,7 +393,7 @@
                 ham.classList.toggle('showClose');
             }
         </script>
-
+        <!--
         <script type="text/javascript" src="path/to/instafeed.min.js"></script>
         <script type="text/javascript">
             var feed = new Instafeed({
@@ -386,5 +401,6 @@
             });
             feed.run();
         </script>
+        -->
     </body>
 </html>
